@@ -474,6 +474,10 @@ public class TwoWayView extends AdapterView<ListAdapter> implements
         invokeOnItemScrollListener();
     }
 
+    public OnScrollListener getOnScrollListener() {
+        return mOnScrollListener;
+    }
+
     /**
      * Sets the recycler listener to be notified whenever a View is set aside in
      * the recycler for later reuse. This listener can be used to free resources
